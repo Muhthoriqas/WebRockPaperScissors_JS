@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2/family=Patrick+Hand&display=swap");
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* ubah font seluruh layar */
+  font-family: "Patrick Hand", cursive;
+}
+
+body {
+  height: 100vh;
+  /* animasi scrool */
+  scroll-behavior: smooth;
+}
+
+section {
+  height: 100vh;
+  background: url(./images/bg\ suit.jpg);
+  background-size: cover;
+}
+
+.judul {
+  font-size: 5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.bingkai {
+  border: 5px solid #603601;
+  width: 350px;
+  height: 350px;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.option {
+  margin: 10px 15px;
+}
+
+.option:hover {
+  color: #6f4c5b;
+  cursor: pointer;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) ease-in-out;
+  transform: scale(150%);
+}
+
+.top {
+  font-size: large;
+  cursor: pointer;
+  font-size: 3em;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: fixed;
+  border-radius: 15px;
+  bottom: 20px;
+  right: 20px;
+  width: 75px;
+  height: 75px;
+  background-color: wheat;
+}

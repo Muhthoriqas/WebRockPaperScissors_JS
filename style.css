@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2/family=Patrick+Hand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
 *,
 html,
 body {
@@ -6,7 +6,8 @@ body {
   padding: 0;
   box-sizing: border-box;
   /* ubah font seluruh layar */
-  font-family: "Patrick Hand", cursive;
+  font-family: cursive;
+  /* A fallback font. If the first font is not available, the browser will try the next one. */
 }
 
 body {
@@ -15,8 +16,13 @@ body {
   scroll-behavior: smooth;
 }
 
-section {
+.section-intro {
   height: 100vh;
+  background: url(./images/bg\ suit.jpg);
+  background-size: cover;
+}
+
+.section-main {
   background: url(./images/bg\ suit.jpg);
   background-size: cover;
 }
@@ -80,4 +86,11 @@ section {
   width: 75px;
   height: 75px;
   background-color: wheat;
+}
+
+.card-footer {
+  bottom: 0;
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
 }
